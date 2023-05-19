@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("img/gif/glitchbg.gif");
+    color: white;
+    margin: 0;
+}
+
+.logo {
+    border: 100px;
+    margin: -13px;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    min-height: 100px;
+}
+
+ul {
+    display: flex;
+    margin: 26px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+@font-face {
+    font-family: 'Amphibia';
+    src: url('fonts/AmphibiaRunes-Regular.ttf') format('opentype'), url('fonts/AmphibiaRunes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'regen';
+    src: url('fonts/Regensburg.ttf') format('opentype'), url('fonts/Regensburg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thunder';
+    src: url('fonts/Thunder\ Kingdom.ttf') format('opentype'), url('fonts/Thunder\ Kingdom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('fonts/BebasNeue-Regular.ttf') format('opentype'), url('fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'thunder';
+    padding: 45px;
+    font-size: 40px;
+    margin: auto;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 25px;
+}
+
+@keyframes textflicker {
+    from {
+        text-shadow: 1px 0 0 #ea36af, -2px 0 0 #9f00fc;
+    }
+    to {
+        text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #5803a8;
+    }
+}
+
+p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: 'bebas';
+    font-size: 25px;
+    padding: 50px;
+    color: white;
+    text-indent: 1ch;
+    text-align: center;
+    position: relative;
+    top: -120px
+}
+
+.git {
+    padding: 10px;
+}
+
+.img-container {
+    text-align: center;
+    position: relative;
+    top: -30px;
+    padding: 5px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin: auto;
+    font-family: 'regen';
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    animation-duration: 0.01s;
+    animation-name: textflicker2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes textflicker2 {
+    from {
+        text-shadow: 1px 0 0 #ff00c8, -2px 0 0 #00a2ff;
+    }
+    to {
+        text-shadow: 2px 0.5px 2px #ff00c8, -1px -0.5px 2px #00a2ff;
+    }
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: auto;
+    display: inline-block;
+    padding: 0.5em 1em;
+    position: relative;
+    top: -125px;
+}
+
+nav {
+    text-align: right;
+    justify-content: right;
+}

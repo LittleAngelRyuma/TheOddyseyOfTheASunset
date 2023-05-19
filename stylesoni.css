@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("img/gif/glitchbg.gif");
+    color: white;
+    margin: 0;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    min-height: 100px;
+}
+
+@font-face {
+    font-family: 'regen';
+    src: url('fonts/Regensburg.ttf') format('opentype'), url('fonts/Regensburg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thunder';
+    src: url('fonts/Thunder\ Kingdom.ttf') format('opentype'), url('fonts/Thunder\ Kingdom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('fonts/BebasNeue-Regular.ttf') format('opentype'), url('fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.h1oni {
+    margin: 20px;
+    font-size: 45px;
+    justify-content: left;
+    text-align: left;
+    padding: 5px;
+    font-family: 'thunder';
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes textflicker {
+    from {
+        text-shadow: 1px 0 0 #ea36af, -2px 0 0 #9f00fc;
+    }
+    to {
+        text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #5803a8;
+    }
+}
+
+.text {
+    margin: 20px;
+    background-color: black;
+    font-family: 'bebas';
+    font-size: 20px;
+}
